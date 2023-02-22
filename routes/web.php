@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Validation\ValidationException;
+use App\Http\Controllers\Auth\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,15 +27,13 @@ Route::get('/', function () {
     return view('auth.page');
 });*/
 
-Route::view('/', 'auth.page');
+Route::view('/', 'auth.page')->name('login');
 
-Route::view('/panel', 'panel.page');
+Route::view('/panel', 'panel.page')->middleware('auth');
 
 
-Route::post('/', function() {
+Route::post('/', [LoginController::class, 'login']);
 
-    $credenciales = request()->only('uid','clave');
+Route::post('/logout', [LoginController::class, 'logout']);
 
-    dump($credenciales);
-});
 

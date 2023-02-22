@@ -132,16 +132,16 @@
                 </a>
                 <ul class="collapse submenu list-unstyled" id="submenu3" data-parent="#accordionExample">
                     <li>
-                        <a class="ml-n4" href="javascript:void(0);"> Partes y Suministros </a>
+                        <a class="ml-n5" href="javascript:void(0);"> Partes y Suministros </a>
                     </li>
                     <li>
-                        <a class="ml-n4" href="javascript:void(0);"> Stock actual </a>
+                        <a class="ml-n5" href="javascript:void(0);"> Stock actual </a>
                     </li>
                     <li>
-                        <a class="ml-n4" href="javascript:void(0);"> Ajuste de existencia por lote </a>
+                        <a class="ml-n5" href="javascript:void(0);"> Ajuste de existencia por lote </a>
                     </li>
                     <li>
-                        <a class="ml-n4" href="javascript:void(0);"> Grupos de lista de materiales</a>
+                        <a class="ml-n5" href="javascript:void(0);"> Grupos de lista de materiales</a>
                     </li>
 
                 </ul>

@@ -23,7 +23,7 @@
 
 
                 <!-- CONTENT AREA -->
-
+                
                 @yield('content')
 
                 <!-- CONTENT AREA -->

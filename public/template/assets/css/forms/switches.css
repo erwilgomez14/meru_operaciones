@@ -54,7 +54,7 @@
   .switch.s-default .slider:before {
     background-color: #d3d3d3; }
   .switch.s-primary .slider:before {
-    background-color: #1b55e2; }
+    background-color: #1e638c; }
   .switch.s-success .slider:before {
     background-color: #8dbf42; }
   .switch.s-warning .slider:before {
@@ -74,7 +74,7 @@
   .switch.s-default input:focus + .slider {
     box-shadow: 0 0 1px #ebedf2; }
   .switch.s-primary input:checked + .slider {
-    background-color: #1b55e2; }
+    background-color: #1e638c; }
   .switch.s-primary input:focus + .slider {
     box-shadow: 0 0 1px #1b55e2; }
   .switch.s-success input:checked + .slider {
