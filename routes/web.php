@@ -13,14 +13,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
 
-Route::get('/panel', function () {
+/*Route::get('/panel', function () {
     return view('panel.page');
 });
-Route::get('/login', function () {
+Route::get('/', function () {
     return view('auth.page');
+});*/
+
+Route::view('/', 'auth.page');
+
+Route::view('/panel', 'panel.page');
+
+
+Route::post('/', function() {
+
+    $credenciales = request()->only('uid','clave');
+
+    dump($credenciales);
 });
 
