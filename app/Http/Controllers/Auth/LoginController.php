@@ -19,9 +19,9 @@ class LoginController extends Controller
 
         $user = User::where('uid', $request->email)->get()->first();
 
-        //  dd($user);
+          /*dd($user);*/
 
-        if($user->clave === md5($request->password))
+        if($user->clave === md5($request->password) && $user->idstatus === 1)
         {
             Auth::login($user);
 
