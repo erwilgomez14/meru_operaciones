@@ -9,7 +9,7 @@
             </li>
             <li class="nav-item theme-text">
                 <a href="index.html" class="nav-link"> MERU </a>
-                <p>Mantenimineto - Operaciones</p>
+                <p>Mantenimiento - Operaciones</p>
             </li>
             <li class="nav-item toggle-sidebar">
                 <a href="javascript:void(0);" class="sidebarCollapse" data-placement="bottom"><svg
@@ -45,7 +45,7 @@
                         <div class="media mx-auto">
                             {{-- <img src="assets/img/90x90.jpg" class="img-fluid mr-2" alt="avatar"> --}}
                             <div class="media-body">
-                                <h5>Sonia Shaw</h5>
+                                <h5>{{Auth::user()->nombre}}</h5>
                                 <p>Project Leader</p>
                             </div>
                         </div>
@@ -84,7 +84,7 @@
                     </div> --}}
                     
                     <div class="dropdown-item">
-                        <form action="{{config('app.url')}}/logout" method="post">
+                        <form action="logout" method="post">
                             @csrf
                             <a href="#" onclick="this.closest('form').submit()">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"

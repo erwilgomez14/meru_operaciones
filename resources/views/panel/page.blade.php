@@ -12,7 +12,7 @@
             {{-- <div class="alert alert-success" role="alert">
                 <strong>{{session('status')}}</strong>
             </div> --}}
-            <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <div class="alert alert-primary alert-dismissible fade show" role="alert">
               <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -24,9 +24,9 @@
             </script>
             @endif
 
-                <h6>Blank Page - Kick Start you new project with ease!</h6>
+                <h6>Bienvenido a Meru Operaciones</h6>
 
-                <p class="">With CORK starter kit, you can begin your work without any hassle. The starter page is highly optimized which gives you freedom to start with minimal code and add only the desired components and plugins required for your project.</p>
+                {{-- <p class="">With CORK starter kit, you can begin your work without any hassle. The starter page is highly optimized which gives you freedom to start with minimal code and add only the desired components and plugins required for your project.</p> --}}
 
             </div>
         </div>

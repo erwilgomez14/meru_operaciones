@@ -24,7 +24,7 @@ class LoginRequest extends FormRequest
         return
             //
             [
-                'email' => ['required', 'email', 'string'],
+                'uid' => ['required', 'string'],
                 'password' => ['required', 'string']
             ];
     }

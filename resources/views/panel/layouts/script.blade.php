@@ -53,3 +53,15 @@
 	}
 	// ]]>
 </script>
+
+    <!-- END GLOBAL MANDATORY SCRIPTS -->
+
+    <!-- BEGIN PAGE LEVEL SCRIPTS -->
+    <script src="template/plugins/fullcalendar/moment.min.js"></script>
+    <script src="template/plugins/flatpickr/flatpickr.js"></script>
+    <script src="template/plugins/fullcalendar/fullcalendar.min.js"></script>
+    <!-- END PAGE LEVEL SCRIPTS -->
+
+    <!--  BEGIN CUSTOM SCRIPTS FILE  -->
+    <script src="template/plugins/fullcalendar/custom-fullcalendar.advance.js"></script>
+    <!--  END CUSTOM SCRIPTS FILE  -->

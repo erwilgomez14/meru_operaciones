@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Redirector;
 use Illuminate\Support\Facades\Auth;
@@ -15,14 +16,37 @@ class LoginController extends Controller
     {
         
         $recuerdame = ($request->filled('remember'));
+
+        $user = User::where('uid', $request->email)->get()->first();
+
+        //  dd($user);
+
+        if($user->clave === md5($request->password))
+        {
+            Auth::login($user);
+
+            $request->session()->regenerate();
+
+            // return redirect('panel');
+            // return 'logeado';
+           return $redirector->to('panel')->with('status', 'Autenticacion Satisfactoria');
+            
+
+            
+        //     $request->session()->regenerate();
+
+        //     // return redirect('panel');
+        //     ;
+
+        }
         
     
-        if (Auth::attempt($request->only('email', 'password'), $recuerdame)){
+        // if (Auth::attempt($request->only('email', 'password'), $recuerdame)){
     
-            $request->session()->regenerate();
+        //     $request->session()->regenerate();
     
-            return $redirector->intended('panel')->with('status', 'Autenticacion Satisfactoria');
-        }
+        //     return $redirector->intended('panel')->with('status', 'Autenticacion Satisfactoria');
+        // }
     
         throw ValidationException::withMessages([
             'email' => __('auth.failed'),
@@ -37,6 +61,6 @@ class LoginController extends Controller
 
         $request->session()->regenerateToken();
         
-        redirect('/')->with('status', 'Desconexion Satisfactoria');
+        return $redirector->to('/')->with('status', 'Desconexion Satisfactoria');
     }
 }

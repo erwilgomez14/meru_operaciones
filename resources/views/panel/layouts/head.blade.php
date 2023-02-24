@@ -9,7 +9,11 @@
     <link href="template/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="template/assets/css/plugins.css" rel="stylesheet" type="text/css" />
     <!-- END GLOBAL MANDATORY STYLES -->
-
+    <link href="template/plugins/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css" />
+    <link href="template/plugins/fullcalendar/custom-fullcalendar.advance.css" rel="stylesheet" type="text/css" />
+    <link href="template/plugins/flatpickr/flatpickr.css" rel="stylesheet" type="text/css">
+    <link href="template/plugins/flatpickr/custom-flatpickr.css" rel="stylesheet" type="text/css">
+    <link href="template/assets/css/forms/theme-checkbox-radio.css" rel="stylesheet" type="text/css" />
     <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
 
     <style>

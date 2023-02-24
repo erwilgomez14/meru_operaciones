@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
 use App\Http\Controllers\Auth\LoginController;
+use App\Models\User;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,9 +29,22 @@ Route::get('/', function () {
     return view('auth.page');
 });*/
 
+// dd(User::where('uid', 'vcoll')->get()->toArray());
+
 Route::view('/', 'auth.page')->name('login');
 
-Route::view('/panel', 'panel.page')->middleware('auth');
+Route::view('/panel', 'panel.page')->middleware('auth');;
+
+// Route::get('/panel', function (Request $request) {
+
+
+//     // $user = User::where('uid', $request->email)->get()->first();
+
+//     // return $user;
+
+//     return view('panel.page');
+
+// })
 
 
 Route::post('/', [LoginController::class, 'login']);
