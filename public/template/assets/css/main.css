@@ -27,6 +27,10 @@ h1, h2, h3, h4, h5, h6 {
 :focus {
   outline: none; }
 
+label.requerido:after {
+  content: " *";
+  color: #e73d4a;
+}
 ::-moz-selection {
   /* Code for Firefox */
   color: #1b55e2;

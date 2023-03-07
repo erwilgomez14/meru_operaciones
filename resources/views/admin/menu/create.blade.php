@@ -5,19 +5,9 @@
         <div class="col-xl-12 col-lg-12 col-md-12 col-12 layout-spacing">
             <div class="widget-content-area br-4">
                 <div class="widget-one">
-                    @if (session('status'))
-                        <div class="alert alert-primary alert-dismissible fade show" role="alert">
-                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            <strong>{{ session('status') }}</strong>
-                        </div>
-
-                        <script>
-                            $(".alert").alert();
-                        </script>
-                    @endif
+                    
                     <div class="col-lg-12 col-12  layout-spacing mt-3">
+                        @include('includes.alert-create-menu')
                         <div class="statbox widget box box-shadow">
                             <div class="widget-header bg-info">
                                 <div class="row">
@@ -27,9 +17,10 @@
                                 </div>
                             </div>
                             <div class="widget-content widget-content-area">
-                                <form>
+                                <form action="{{route('menu.guardar')}}" id="form-control" autocomplete="off" method="POST">
+                                    @csrf
                                     @include('admin.menu.form')
-                                    <input type="submit" name="time" class="btn btn-primary" value="Guardar">
+                                    @include('includes.boton-form-crear')
                                 </form>
                             </div>
                         </div>

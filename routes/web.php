@@ -57,6 +57,7 @@ Route::group(['prefix' => 'admin'], function(){
 
     Route::get('menu', [MenuController::class, 'index'])->name('menu');
     Route::get('menu/crear', [MenuController::class, 'crear'])->name('menu.crear');
+    Route::post('menu', [MenuController::class, 'guardar'])->name('menu.guardar');
 
 
 
