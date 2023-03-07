@@ -45,7 +45,9 @@
                         <div class="media mx-auto">
                             {{-- <img src="assets/img/90x90.jpg" class="img-fluid mr-2" alt="avatar"> --}}
                             <div class="media-body">
-                                <h5>{{Auth::user()->nombre}}</h5>
+                                <h5>hola</h5>
+                                {{-- <h5>{{Auth::user()->nombre}}</h5> --}}
+
                                 <p>Project Leader</p>
                             </div>
                         </div>
@@ -82,7 +84,7 @@
                             </svg> <span>Lock Screen</span>
                         </a>
                     </div> --}}
-                    
+
                     <div class="dropdown-item">
                         <form action="logout" method="post">
                             @csrf

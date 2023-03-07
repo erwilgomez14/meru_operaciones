@@ -5,7 +5,9 @@
             {{-- <figure class="user-cover-image"></figure> --}}
             <div class="user-info mt-n3">
                 {{-- <img src="assets/img/" alt="avatar"> --}}
-                <h6 class="">{{Auth::user()->nombre}}</h6>
+                {{-- <h6 class="">{{Auth::user()->nombre}}</h6> --}}
+                <h6 class="">Hola</h6>
+
                 <p class="">Project Leader</p>
             </div>
         </div>
@@ -236,7 +238,7 @@
                     <li>
                         <a class="ml-n5" href="javascript:void(0);"> Stock actual </a>
                     </li>
-                    
+
                 </ul>
             </li>
             <li class="menu">

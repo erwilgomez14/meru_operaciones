@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\MenuController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
@@ -51,4 +52,13 @@ Route::post('/', [LoginController::class, 'login']);
 
 Route::post('/logout', [LoginController::class, 'logout']);
 
+
+Route::group(['prefix' => 'admin'], function(){
+
+    Route::get('menu', [MenuController::class, 'index'])->name('menu');
+    Route::get('menu/crear', [MenuController::class, 'crear'])->name('menu.crear');
+
+
+
+});
 

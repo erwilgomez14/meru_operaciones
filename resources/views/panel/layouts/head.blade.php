@@ -6,14 +6,14 @@
     <link rel="icon" type="image/x-icon" href="template/assets/img/favicon.ico"/>
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap" rel="stylesheet">
-    <link href="template/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="template/assets/css/plugins.css" rel="stylesheet" type="text/css" />
+    <link href="{{asset("template/bootstrap/css/bootstrap.min.css")}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset("template/assets/css/plugins.css")}}" rel="stylesheet" type="text/css" />
     <!-- END GLOBAL MANDATORY STYLES -->
-    <link href="template/plugins/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css" />
-    <link href="template/plugins/fullcalendar/custom-fullcalendar.advance.css" rel="stylesheet" type="text/css" />
-    <link href="template/plugins/flatpickr/flatpickr.css" rel="stylesheet" type="text/css">
-    <link href="template/plugins/flatpickr/custom-flatpickr.css" rel="stylesheet" type="text/css">
-    <link href="template/assets/css/forms/theme-checkbox-radio.css" rel="stylesheet" type="text/css" />
+    <link href="{{asset("template/plugins/fullcalendar/fullcalendar.css")}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset("template/plugins/fullcalendar/custom-fullcalendar.advance.css")}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset("template/plugins/flatpickr/flatpickr.css")}}" rel="stylesheet" type="text/css">
+    <link href="{{asset("template/plugins/flatpickr/custom-flatpickr.css")}}" rel="stylesheet" type="text/css">
+    <link href="{{asset("template/assets/css/forms/theme-checkbox-radio.css")}}" rel="stylesheet" type="text/css" />
     <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
 
     <style>
